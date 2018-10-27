@@ -4,14 +4,14 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "template/import/helper/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "template-import-helper"
+  spec.name          = "template_import_helper"
   spec.version       = Template::Import::Helper::VERSION
   spec.authors       = ["NickNish09"]
   spec.email         = ["nnmarques97@gmail.com"]
 
   spec.summary       = "Gema utilizada para transformar assets importados de forma manual de templates para assets importados do rails"
   spec.homepage      = "https://github.com/NickNish09/template-import-helper"
-
+  spec.add_development_dependency 'rails', '>= 3.2.0'
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
   if spec.respond_to?(:metadata)
